@@ -1,0 +1,171 @@
+
+files:
+  include:
+    - "src/scss/**/*.scss"
+rules:
+  attribute-quotes:
+    - 2
+    -
+      include: false
+  bem-depth:
+    - 2
+    -
+      max-depth: 1
+  border-zero:
+    - 2
+    -
+      convention: '0'
+  brace-style:
+    - 2
+    -
+      style: '1tbs'
+      allow-single-line: false
+  class-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedlowercase
+      ignore:
+        - cycle_time
+        - good_shots
+        - occupancy_rate
+        - error_count
+  declarations-before-nesting:
+    - 2
+  empty-args:
+    - 2
+    -
+      include: true
+  empty-line-between-blocks:
+    - 2
+    -
+      include: true
+      allow-single-line-rulesets: false
+  extends-before-declarations:
+    - 2
+  extends-before-mixins:
+    - 2
+  final-newline:
+    - 2
+    -
+      include: true
+  force-element-nesting:
+    - 0
+  force-pseudo-nesting:
+    - 0
+  function-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedlowercase
+  hex-length:
+    - 2
+    -
+      style: long
+  hex-notation:
+    - 2
+    -
+      style: lowercase
+
+  indentation:
+    - 2
+    -
+      size: 2
+  max-file-line-count:
+    - 2
+    -
+      length: 250
+  mixin-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedlowercase
+  mixins-before-declarations:
+    - 2
+  nesting-depth:
+    - 0
+  no-debug:
+    - 2
+  no-duplicate-properties:
+    - 2
+  no-empty-rulesets:
+    - 2
+  no-important:
+    - 2
+  no-invalid-hex:
+    - 2
+  no-mergeable-selectors:
+    - 2
+  no-misspelled-properties:
+    - 2
+  no-qualifying-elements:
+    - 0
+  no-trailing-whitespace:
+    - 2
+  no-trailing-zero:
+    - 2
+  no-universal-selectors:
+    - 2
+  no-url-domains:
+    - 2
+  no-url-protocols:
+    - 2
+  one-declaration-per-line:
+    - 2
+  placeholder-in-extend:
+    - 2
+  placeholder-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedlowercase
+  property-sort-order:
+    - 2
+    -
+      order: alphabetical
+  quotes:
+    - 2
+    -
+      style: double
+  space-after-bang:
+    - 2
+    -
+      include: false
+  space-after-colon:
+    - 2
+    -
+      include: true
+  space-after-comma:
+    - 2
+    -
+      include: true
+  space-around-operator:
+    - 2
+    -
+      include: true
+  space-before-bang:
+    - 2
+    -
+      include: true
+  space-before-brace:
+    - 2
+    -
+      include: true
+  space-before-colon:
+    - 2
+    -
+      include: false
+  space-between-parens:
+    - 2
+    -
+      include: false
+  trailing-semicolon:
+    - 2
+    -
+      include: true
+  url-quotes:
+    - 2
+  zero-unit:
+    - 2
+    -
+      include: false
