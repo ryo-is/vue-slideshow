@@ -37,7 +37,12 @@ export default class Contents extends Vue {
     4: {
       mainText: "仲良くなってやってください m(_ _)m",
       prebLink: "/patternA/3",
-      nextLink: "/patternA/4"
+      nextLink: "/patternA/5",
+    },
+    5: {
+      mainText: "それでは本題いきましょう！",
+      prebLink: "/patternA/4",
+      nextLink: "/summary"
     }
   };
   transitionPageInfo: transitionPageInfoType = {

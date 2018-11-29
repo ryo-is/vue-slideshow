@@ -1,0 +1,11 @@
+@import "../../common/style/mixin";
+
+.conclusion {
+  .page-title {
+    @include page-title();
+  }
+
+  .page-contents {
+    @include page-contents();
+  }
+}

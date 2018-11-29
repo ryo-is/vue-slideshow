@@ -3,6 +3,8 @@ import Router from "vue-router";
 import Title from "./components/title/Title.vue";
 import Introduction from "./components/introduction/Introduction.vue";
 import PatternA from "./components/patternA/PatternA.vue";
+import Summary from "./components/summary/Summary.vue";
+import Conclusion from "./components/conclusion/Conclusion.vue";
 
 Vue.use(Router);
 
@@ -24,6 +26,16 @@ export default new Router({
       path: "/patternA/:pageName",
       name: "patternA",
       component: PatternA
+    },
+    {
+      path: "/summary",
+      name: "summary",
+      component: Summary
+    },
+    {
+      path: "/conclusion",
+      name: "conclusion",
+      component: Conclusion
     }
   ]
 });

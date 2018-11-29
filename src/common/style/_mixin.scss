@@ -1,0 +1,21 @@
+@import "../../common/style/config";
+
+@mixin page-title() {
+  border-bottom: 10px solid $vue-light-color;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-left: 2rem;
+  padding: 2vh 0 0 4vw;
+  text-align: left;
+  width: 70vw
+}
+
+@mixin page-contents($fontSize: 6rem, $marginTop: 25vh) {
+  font-size: $fontSize;
+  left: 0;
+  line-height: 16vh;
+  margin: $marginTop auto 0;
+  position: absolute;
+  right: 0;
+  width: 90vw;
+}
