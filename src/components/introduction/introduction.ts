@@ -2,7 +2,7 @@ import { Component, Vue } from "vue-property-decorator";
 import { transitionPageInfoType } from "@/types";
 
 @Component({})
-export default class Contents extends Vue {
+export default class Introduction extends Vue {
   textValues: string[] = [
     "泉 亮輔 (Ryosuke Izumi / is_ryo)",
     "IoT.kyoto (https://iot.kyoto)",
@@ -14,6 +14,6 @@ export default class Contents extends Vue {
   ];
   transitionPageInfo: transitionPageInfoType = {
     preb: "/",
-    next: ""
+    next: "/patternA/1"
   };
 }
