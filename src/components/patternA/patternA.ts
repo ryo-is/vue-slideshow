@@ -3,7 +3,6 @@ import { transitionPageInfoType } from "@/types";
 
 @Component({
   beforeRouteUpdate(to, from, next) {
-    console.log(to.path);
     this.$data.pageName = to.path;
     next();
   }
@@ -37,7 +36,7 @@ export default class Contents extends Vue {
     4: {
       mainText: "仲良くなってやってください m(_ _)m",
       prebLink: "/patternA/3",
-      nextLink: "/patternA/5",
+      nextLink: "/patternA/5"
     },
     5: {
       mainText: "それでは本題いきましょう！",
