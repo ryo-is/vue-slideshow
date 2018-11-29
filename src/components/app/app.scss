@@ -8,4 +8,24 @@
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   min-height: 100vh;
   text-align: center;
+
+  .transition-page-area {
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    z-index: 1000;
+
+    .preb-page,
+    .next-page {
+      height: 100vh;
+    }
+
+    .preb-page {
+      cursor: w-resize;
+    }
+
+    .next-page {
+      cursor: e-resize;
+    }
+  }
 }

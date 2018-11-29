@@ -1,5 +1,4 @@
-<template src="./title.pug" lang="pug">
-</template>
+<template src="./title.pug" lang="pug"></template>
 
 <script src="./title.ts" lang="ts"></script>
 

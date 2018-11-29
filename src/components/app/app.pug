@@ -1,2 +1,8 @@
 #app
-  router-view
+  el-row.transition-page-area
+    el-col(:span="4")
+      .preb-page(@click="transitionPage('preb')")
+    el-col(:span="20")
+      .next-page(@click="transitionPage('next')")
+  transition(name="router-transition" enter-active-class="animated slideInRight")
+    router-view

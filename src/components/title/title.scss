@@ -1,1 +1,26 @@
-.title {}
+.title {
+  min-height: 100vh;
+
+  .title-area {
+    padding-top: 40vh;
+
+    .main-title {
+      font-size: 5rem;
+      font-weight: bold;
+    }
+
+    .sub-title {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+  }
+
+  .vue-logo {
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 15vh;
+    width: 200px;
+  }
+}
