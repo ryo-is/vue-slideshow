@@ -1,13 +1,6 @@
-@import "../../common/style/mixin";
-
 .summary {
-  .page-title {
-    @include page-title();
-  }
-
   .page-contents {
-    @include page-contents(5rem, 20vh);
-
+    margin-top: 18vh;
     text-align: left;
   }
 }

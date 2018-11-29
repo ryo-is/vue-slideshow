@@ -5,6 +5,6 @@ import { transitionPageInfoType } from "@/types";
 export default class Title extends Vue {
   transitionPageInfo: transitionPageInfoType = {
     preb: "",
-    next: "introduction"
+    next: "selfIntroduction"
   };
 }

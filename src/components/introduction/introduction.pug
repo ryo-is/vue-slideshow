@@ -1,10 +1,3 @@
-.introduction
-  el-row
-    el-col.images-content(:span="10")
-      .self-image
-        img(src="../../assets/self_image.png", alt="self-image")
-      .sns-image
-        img(src="../../assets/ItemIcon038a.png", alt="sns-image")
-    el-col(:span="14")
-      ul.text-content
-        li(v-for="text in textValues" :key="text") {{ text }}
+
+.pattern-a
+  .main-text {{ useContent.mainText }}

@@ -1,0 +1,34 @@
+.introduction {
+  .images-content {
+    height: 85vh;
+    position: relative;
+
+    .self-image {
+      left: 5vw;
+      position: absolute;
+      top: 5vh;
+      width: 400px;
+    }
+
+    .sns-image {
+      bottom: 10vh;
+      position: absolute;
+      right: 3vw;
+      width: 270px;
+    }
+  }
+
+  .text-content {
+    font-size: 3rem;
+    margin: auto;
+    padding-left: 5vw;
+    position: absolute;
+    text-align: left;
+    top: 5vh;
+
+    li {
+      margin: 10px 0;
+      padding-left: 2rem;
+    }
+  }
+}
