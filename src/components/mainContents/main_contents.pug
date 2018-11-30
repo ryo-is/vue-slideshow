@@ -1,3 +1,5 @@
 .main-contents
   PageTitle(:title-text="pageTitleText")
-  PageContent(:content-text="pageContentText")
+  .split-component(v-if="pageName === 'page4'")
+    include ./views/split-component
+  PageContent(:content-text="pageContentText" v-else)

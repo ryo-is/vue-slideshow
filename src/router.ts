@@ -7,6 +7,7 @@ import Summary from "./components/summary/Summary.vue";
 import Conclusion from "./components/conclusion/Conclusion.vue";
 import WhyCreate from "./components/whyCreate/WhyCreate.vue";
 import MainContents from "./components/mainContents/MainContents.vue";
+import SectionTitle from "./components/sectionTitle/SectionTitle.vue";
 
 Vue.use(Router);
 
@@ -48,6 +49,11 @@ export default new Router({
       path: "/mainContents/:pageName",
       name: "mainContents",
       component: MainContents
+    },
+    {
+      path: "/sectionTitle/:pageName",
+      name: "sectionTitle",
+      component: SectionTitle
     }
   ]
 });

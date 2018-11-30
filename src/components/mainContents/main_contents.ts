@@ -23,6 +23,7 @@ export default class MainContents extends Vue {
     this.setContentInfo();
   }
 
+  basicContent: boolean = true;
   contents: pageContentsType = {
     page1: {
       mainText: "今見ているこれです！",
@@ -34,6 +35,24 @@ export default class MainContents extends Vue {
       mainText: "https://github.com/ryo-is/vue-slideshow",
       mainTitle: "完成品",
       prebLink: "/mainContents/page1",
+      nextLink: "/sectionTitle/page1"
+    },
+    page3: {
+      mainText: "デザインごとにComponentを分ける",
+      mainTitle: "工夫した点",
+      prebLink: "/sectionTitle/page1",
+      nextLink: "/mainContents/page4"
+    },
+    page4: {
+      mainText: "",
+      mainTitle: "工夫した点",
+      prebLink: "/mainContents/page3",
+      nextLink: "/mainContents/page5"
+    },
+    page5: {
+      mainText: "動的セグメントを利用して、なるべくRouterを汚さない",
+      mainTitle: "工夫した点",
+      prebLink: "/mainContents/page4",
       nextLink: "/"
     }
   };
