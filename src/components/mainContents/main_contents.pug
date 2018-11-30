@@ -1,5 +1,11 @@
 .main-contents
   PageTitle(:title-text="pageTitleText")
-  .split-component(v-if="pageName === 'page4'")
-    include ./views/split-component
+  .split-component.apply-content(v-if="pageName === 'page4'")
+    include ./views/split_component
+  .router-setting.apply-content(v-else-if="pageName === 'page6'")
+    include ./views/router_setting
+  .change-pages.apply-content(v-else-if="pageName === 'page8'")
+    include ./views/change_pages
+  .change-pages-links.apply-content(v-else-if="pageName === 'page9'")
+    include ./views/change_pages_links
   PageContent(:content-text="pageContentText" v-else)

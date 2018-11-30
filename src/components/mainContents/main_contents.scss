@@ -1,13 +1,48 @@
 .main-contents {
-  .split-component {
+  .apply-content {
     font-size: 3.5rem;
     line-height: 12vh;
     margin: 5vh 8vw 0;
     text-align: left;
 
-    .slide-title-img {
+    &.change-pages-links {
+      margin-top: 0;
+    }
+
+    .image {
       margin-left: 10vw;
       width: 60vw;
+    }
+
+    .link-area {
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+
+      .link-area-common {
+        height: 100vh;
+        position: relative;
+
+        .text-area {
+          font-size: 4.5rem;
+          font-weight: bold;
+          left: 0;
+          line-height: 20vh;
+          position: absolute;
+          right: 0;
+          text-align: center;
+          top: 40vh;
+        }
+      }
+
+      .preb-link-area {
+        background-color: rgba(#FF9933, .5);
+      }
+
+      .next-link-area {
+        background-color: rgba(#0099FF, .5);
+      }
     }
   }
 }

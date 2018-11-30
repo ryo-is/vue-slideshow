@@ -12,6 +12,11 @@ export default class SectionTitle extends Vue {
       mainText: "工夫した点",
       prebLink: "/mainContents/page2",
       nextLink: "/mainContents/page3"
+    },
+    page2: {
+      mainText: "",
+      prebLink: "/mainContents/page2",
+      nextLink: "/mainContents/page3"
     }
   };
   transitionPageInfo: transitionPageInfoType = {

@@ -53,7 +53,31 @@ export default class MainContents extends Vue {
       mainText: "動的セグメントを利用して、なるべくRouterを汚さない",
       mainTitle: "工夫した点",
       prebLink: "/mainContents/page4",
-      nextLink: "/"
+      nextLink: "/mainContents/page6"
+    },
+    page6: {
+      mainText: "",
+      mainTitle: "工夫した点",
+      prebLink: "/mainContents/page5",
+      nextLink: "/mainContents/page7"
+    },
+    page7: {
+      mainText: "画面(スライド)の切り替え",
+      mainTitle: "工夫した点",
+      prebLink: "/mainContents/page6",
+      nextLink: "/mainContents/page8"
+    },
+    page8: {
+      mainText: "",
+      mainTitle: "工夫した点",
+      prebLink: "/mainContents/page7",
+      nextLink: "/mainContents/page9"
+    },
+    page9: {
+      mainText: "",
+      mainTitle: "工夫した点",
+      prebLink: "/mainContents/page8",
+      nextLink: "/mainContents/page9"
     }
   };
   transitionPageInfo: transitionPageInfoType = {
