@@ -42,7 +42,7 @@ export default class WhyCreate extends Vue {
     page4: {
       mainText: "よし、作るか",
       prebLink: "/whyCreate/page3",
-      nextLink: "/mainContents/page1"
+      nextLink: "/sectionTitle/page1"
     }
   };
   transitionPageInfo: transitionPageInfoType = {

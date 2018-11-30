@@ -28,19 +28,19 @@ export default class MainContents extends Vue {
     page1: {
       mainText: "今見ているこれです！",
       mainTitle: "完成品",
-      prebLink: "/whyCreate/page4",
+      prebLink: "/sectionTitle/page1",
       nextLink: "/mainContents/page2"
     },
     page2: {
       mainText: "https://github.com/ryo-is/vue-slideshow",
       mainTitle: "完成品",
       prebLink: "/mainContents/page1",
-      nextLink: "/sectionTitle/page1"
+      nextLink: "/sectionTitle/page2"
     },
     page3: {
       mainText: "デザインごとにComponentを分ける",
       mainTitle: "工夫した点",
-      prebLink: "/sectionTitle/page1",
+      prebLink: "/sectionTitle/page2",
       nextLink: "/mainContents/page4"
     },
     page4: {

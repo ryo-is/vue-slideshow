@@ -12,7 +12,7 @@ export default class Introduction extends Vue {
   textValues: string[] = [
     "泉 亮輔 (Ryosuke Izumi / is_ryo)",
     "IoT.kyoto (https://iot.kyoto)",
-    "フロントエンドエンジニア",
+    "(フロントエンド)エンジニア",
     "Vueにガチハマり中",
     "(自称)AWS中毒者",
     "JAWS-UG京都 / Node学園",

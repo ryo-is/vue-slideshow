@@ -9,11 +9,16 @@ export default class SectionTitle extends Vue {
 
   contents: pageContentsType = {
     page1: {
+      mainText: "完成品",
+      prebLink: "/whyCreate/page4",
+      nextLink: "/mainContents/page1"
+    },
+    page2: {
       mainText: "工夫した点",
       prebLink: "/mainContents/page2",
       nextLink: "/mainContents/page3"
     },
-    page2: {
+    page3: {
       mainText: "",
       prebLink: "/mainContents/page2",
       nextLink: "/mainContents/page3"
