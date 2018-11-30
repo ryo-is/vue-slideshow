@@ -25,22 +25,22 @@ export default class Summary extends Vue {
 
   contents: pageContentsType = {
     page1: {
-      mainText: "Vueでなんか作りたいなーって",
+      mainText: "v-kansaiで15分枠を手に入れた！",
       prebLink: "/conclusion",
       nextLink: "/whyCreate/page2"
     },
     page2: {
-      mainText: "スライドショーって自作できるんじゃね？",
+      mainText: "Vueでなんか作りたいなーって",
       prebLink: "/whyCreate/page1",
       nextLink: "/whyCreate/page3"
     },
     page3: {
-      mainText: "よし、作るか",
+      mainText: "スライドショーって自作できるんじゃね？",
       prebLink: "/whyCreate/page2",
       nextLink: "/whyCreate/page4"
     },
     page4: {
-      mainText: "これが地獄の始まり……",
+      mainText: "よし、作るか",
       prebLink: "/whyCreate/page3",
       nextLink: "/whyCreate/page4"
     }

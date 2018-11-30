@@ -1,39 +1,10 @@
 # vue-slideshow
 
-## Project setup
-```
-yarn install
-```
+v-kansai Vue.js/Nuxt.js meetup #1での発表スライドです。
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## SetUp
 
-### Compiles and minifies for production
 ```
-yarn run build
+$ yarn install
+$ yarn run serve
 ```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Run your end-to-end tests
-```
-yarn run test:e2e
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
