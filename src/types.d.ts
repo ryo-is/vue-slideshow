@@ -4,11 +4,11 @@ export type transitionPageInfoType = {
 };
 
 export type pageContentsType = {
-  [key: string]: pageContentType
-}
+  [key: string]: pageContentType;
+};
 
 export type pageContentType = {
   mainText: string;
   prebLink: string;
   nextLink: string;
-}
+};

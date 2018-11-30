@@ -29,7 +29,7 @@ export default new Router({
       component: Introduction
     },
     {
-      path: "/summary",
+      path: "/summary/:pageName",
       name: "summary",
       component: Summary
     },
@@ -39,7 +39,7 @@ export default new Router({
       component: Conclusion
     },
     {
-      path: "/whyCreate",
+      path: "/whyCreate/:pageName",
       name: "whyCreate",
       component: WhyCreate
     }

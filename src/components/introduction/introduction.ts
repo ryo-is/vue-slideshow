@@ -41,7 +41,7 @@ export default class SelfIntroduction extends Vue {
     page5: {
       mainText: "それでは本題いきましょう！",
       prebLink: "/introduction/page4",
-      nextLink: "/summary"
+      nextLink: "/summary/page1"
     }
   };
   transitionPageInfo: transitionPageInfoType = {

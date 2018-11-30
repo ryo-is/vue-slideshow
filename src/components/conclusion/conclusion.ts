@@ -15,11 +15,11 @@ export default class Conclusion extends Vue {
     page1: {
       prebLink: "/selfIntroduction",
       nextLink: "/introduction/page2"
-    },
+    }
   };
   transitionPageInfo: transitionPageInfoType = {
-    preb: "/summary",
-    next: "/whyCreate"
+    preb: "/summary/page1",
+    next: "/whyCreate/page1"
   };
   pageContentText: string =
     "Vueの勉強にはなったけど…良い子は真似しちゃいけません";
