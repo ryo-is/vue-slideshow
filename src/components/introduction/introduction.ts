@@ -1,5 +1,5 @@
 import { Component, Vue, Watch } from "vue-property-decorator";
-import { transitionPageInfoType } from "@/types";
+import { transitionPageInfoType, pageContentsType } from "@/types";
 
 @Component({
   beforeRouteUpdate(to, from, next) {
@@ -17,7 +17,7 @@ export default class SelfIntroduction extends Vue {
     this.setContentInfo();
   }
 
-  contents: any = {
+  contents: pageContentsType = {
     page1: {
       mainText: "v-kansaiローンチ、おめでとうございます！！",
       prebLink: "/selfIntroduction",
@@ -48,13 +48,13 @@ export default class SelfIntroduction extends Vue {
     preb: "",
     next: ""
   };
-  useContent: any = "";
+  mainText: string = "";
   pageName: string = "";
 
   public setContentInfo() {
     this.pageName = this.$route.params.pageName;
-    this.useContent = this.contents[this.pageName];
-    this.transitionPageInfo.preb = this.useContent.prebLink;
-    this.transitionPageInfo.next = this.useContent.nextLink;
+    this.mainText = this.contents[this.pageName].mainText;
+    this.transitionPageInfo.preb = this.contents[this.pageName].prebLink;
+    this.transitionPageInfo.next = this.contents[this.pageName].nextLink;
   }
 }

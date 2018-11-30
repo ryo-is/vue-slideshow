@@ -14,7 +14,6 @@ export default class Summary extends Vue {
     preb: "/introduction/page5",
     next: "conclusion"
   };
-  pageContentText: string =
-    "Vueが好きすぎて発表スライドを自作して、いい意味でも悪い意味でも勉強になったって話をします";
-  pageTitleText: string = "今日のお話";
+  pageContentText: string = "Vueでなんか作りたいなーって";
+  pageTitleText: string = "なぜこんなことをしたのか";
 }

@@ -11,9 +11,15 @@ import PageContent from "../parts/pageContent/PageContent.vue";
 })
 export default class Conclusion extends Vue {
   textValues: string[] = [];
+  contents: any = {
+    page1: {
+      prebLink: "/selfIntroduction",
+      nextLink: "/introduction/page2"
+    },
+  };
   transitionPageInfo: transitionPageInfoType = {
     preb: "/summary",
-    next: ""
+    next: "/whyCreate"
   };
   pageContentText: string =
     "Vueの勉強にはなったけど…良い子は真似しちゃいけません";
