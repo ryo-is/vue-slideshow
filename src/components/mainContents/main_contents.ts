@@ -13,7 +13,7 @@ import PageContent from "../parts/pageContent/PageContent.vue";
     next();
   }
 })
-export default class WhyCreate extends Vue {
+export default class MainContents extends Vue {
   created() {
     this.setContentInfo();
   }
@@ -25,24 +25,16 @@ export default class WhyCreate extends Vue {
 
   contents: pageContentsType = {
     page1: {
-      mainText: "v-kansaiで15分枠を手に入れた！",
-      prebLink: "/conclusion",
-      nextLink: "/whyCreate/page2"
+      mainText: "今見ているこれです！",
+      mainTitle: "完成品",
+      prebLink: "/whyCreate/page4",
+      nextLink: "/mainContents/page2"
     },
     page2: {
-      mainText: "Vueでなんか作りたいなーって",
-      prebLink: "/whyCreate/page1",
-      nextLink: "/whyCreate/page3"
-    },
-    page3: {
-      mainText: "スライドショーって自作できるんじゃね？",
-      prebLink: "/whyCreate/page2",
-      nextLink: "/whyCreate/page4"
-    },
-    page4: {
-      mainText: "よし、作るか",
-      prebLink: "/whyCreate/page3",
-      nextLink: "/mainContents/page1"
+      mainText: "https://github.com/ryo-is/vue-slideshow",
+      mainTitle: "完成品",
+      prebLink: "/mainContents/page1",
+      nextLink: "/"
     }
   };
   transitionPageInfo: transitionPageInfoType = {
@@ -51,11 +43,12 @@ export default class WhyCreate extends Vue {
   };
   pageContentText: string = "";
   pageName: string = "";
-  pageTitleText: string = "なぜこんなことをしたのか";
+  pageTitleText: string = "";
 
   public setContentInfo() {
     this.pageName = this.$route.params.pageName;
     this.pageContentText = this.contents[this.pageName].mainText;
+    this.pageTitleText = this.contents[this.pageName].mainTitle as string;
     this.transitionPageInfo.preb = this.contents[this.pageName].prebLink;
     this.transitionPageInfo.next = this.contents[this.pageName].nextLink;
   }

@@ -6,6 +6,7 @@ import Introduction from "./components/introduction/Introduction.vue";
 import Summary from "./components/summary/Summary.vue";
 import Conclusion from "./components/conclusion/Conclusion.vue";
 import WhyCreate from "./components/whyCreate/WhyCreate.vue";
+import MainContents from "./components/mainContents/MainContents.vue";
 
 Vue.use(Router);
 
@@ -42,6 +43,11 @@ export default new Router({
       path: "/whyCreate/:pageName",
       name: "whyCreate",
       component: WhyCreate
+    },
+    {
+      path: "/mainContents/:pageName",
+      name: "mainContents",
+      component: MainContents
     }
   ]
 });

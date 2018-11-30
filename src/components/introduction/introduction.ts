@@ -7,7 +7,7 @@ import { transitionPageInfoType, pageContentsType } from "@/types";
     next();
   }
 })
-export default class SelfIntroduction extends Vue {
+export default class Introduction extends Vue {
   created() {
     this.setContentInfo();
   }

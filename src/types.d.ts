@@ -9,6 +9,7 @@ export type pageContentsType = {
 
 export type pageContentType = {
   mainText: string;
+  mainTitle?: string;
   prebLink: string;
   nextLink: string;
 };
