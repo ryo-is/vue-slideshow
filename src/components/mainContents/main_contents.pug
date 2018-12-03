@@ -8,4 +8,10 @@
     include ./views/change_pages
   .change-pages-links.apply-content(v-else-if="pageName === 'page9'")
     include ./views/change_pages_links
+  .iot-kyoto-vis.apply-content(v-else-if="pageName === 'page10'")
+    include ./views/iot_kyoto_vis
+  .iot-kyoto-vis-description.apply-content(v-else-if="pageName === 'page11'")
+    include ./views/iot_kyoto_vis_description
+  .iot-kyoto-vis-architecture.apply-content(v-else-if="pageName === 'page12'")
+    include ./views/iot_kyoto_vis_architecture
   PageContent(:content-text="pageContentText" v-else)

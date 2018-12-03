@@ -1,9 +1,19 @@
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 import { transitionPageInfoType, pageContentsType } from "@/types";
 
-@Component({})
+@Component({
+  beforeRouteUpdate(to, from, next) {
+    this.$data.pageName = to.path;
+    next();
+  }
+})
 export default class SectionTitle extends Vue {
   created() {
+    this.setContentInfo();
+  }
+
+  @Watch("pageName")
+  onPageNameChange() {
     this.setContentInfo();
   }
 
@@ -19,9 +29,14 @@ export default class SectionTitle extends Vue {
       nextLink: "/mainContents/page3"
     },
     page3: {
-      mainText: "",
-      prebLink: "/mainContents/page2",
-      nextLink: "/mainContents/page3"
+      mainText: "その他Vueで作ったアプリ",
+      prebLink: "/mainContents/page9",
+      nextLink: "/sectionTitle/page4"
+    },
+    page4: {
+      mainText: "IoT.kyoto VIS",
+      prebLink: "/sectionTitle/page3",
+      nextLink: "/mainContents/page10"
     }
   };
   transitionPageInfo: transitionPageInfoType = {

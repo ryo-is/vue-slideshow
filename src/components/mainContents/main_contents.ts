@@ -77,7 +77,25 @@ export default class MainContents extends Vue {
       mainText: "",
       mainTitle: "工夫した点",
       prebLink: "/mainContents/page8",
-      nextLink: "/mainContents/page9"
+      nextLink: "/sectionTitle/page3"
+    },
+    page10: {
+      mainText: "",
+      mainTitle: "IoT.kyotoVIS",
+      prebLink: "/sectionTitle/page4",
+      nextLink: "/mainContents/page11"
+    },
+    page11: {
+      mainText: "",
+      mainTitle: "IoT.kyotoVIS",
+      prebLink: "/mainContents/page10",
+      nextLink: "/mainContents/page12"
+    },
+    page12: {
+      mainText: "",
+      mainTitle: "IoT.kyotoVIS",
+      prebLink: "/mainContents/page11",
+      nextLink: "/"
     }
   };
   transitionPageInfo: transitionPageInfoType = {
