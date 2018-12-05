@@ -29,7 +29,7 @@ export default class SectionTitle extends Vue {
       nextLink: "/mainContents/page3"
     },
     page3: {
-      mainText: "その他Vueで作ったアプリ",
+      mainText: "実際にVueで作ったアプリ",
       prebLink: "/mainContents/page9",
       nextLink: "/sectionTitle/page4"
     },
@@ -37,6 +37,16 @@ export default class SectionTitle extends Vue {
       mainText: "IoT.kyoto VIS",
       prebLink: "/sectionTitle/page3",
       nextLink: "/mainContents/page10"
+    },
+    page5: {
+      mainText: "まとめ",
+      prebLink: "/mainContents/page12",
+      nextLink: "/mainContents/page13"
+    },
+    page6: {
+      mainText: "おわり",
+      prebLink: "/conclusion/page2",
+      nextLink: "/"
     }
   };
   transitionPageInfo: transitionPageInfoType = {

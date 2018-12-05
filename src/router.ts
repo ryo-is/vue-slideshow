@@ -36,7 +36,7 @@ export default new Router({
       component: Summary
     },
     {
-      path: "/conclusion",
+      path: "/conclusion/:pageName",
       name: "conclusion",
       component: Conclusion
     },

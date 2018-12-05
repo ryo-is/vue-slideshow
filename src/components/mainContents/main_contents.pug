@@ -14,4 +14,6 @@
     include ./views/iot_kyoto_vis_description
   .iot-kyoto-vis-architecture.apply-content(v-else-if="pageName === 'page12'")
     include ./views/iot_kyoto_vis_architecture
+  .summary.apply-content(v-else-if="pageName === 'page13'")
+    include ./views/summary
   PageContent(:content-text="pageContentText" v-else)

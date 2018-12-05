@@ -18,7 +18,7 @@ export default class Summary extends Vue {
     page1: {
       mainText: "",
       prebLink: "/introduction/page5",
-      nextLink: "/conclusion"
+      nextLink: "/conclusion/page1"
     },
     page2: {
       mainText: "",

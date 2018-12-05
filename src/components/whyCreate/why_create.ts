@@ -26,7 +26,7 @@ export default class WhyCreate extends Vue {
   contents: pageContentsType = {
     page1: {
       mainText: "v-kansaiで15分枠を手に入れた！",
-      prebLink: "/conclusion",
+      prebLink: "/conclusion/page1",
       nextLink: "/whyCreate/page2"
     },
     page2: {
