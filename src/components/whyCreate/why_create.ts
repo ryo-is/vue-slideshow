@@ -35,7 +35,7 @@ export default class WhyCreate extends Vue {
       nextLink: "/whyCreate/page3"
     },
     page3: {
-      mainText: "スライドショーって自作できるんじゃね？",
+      mainText: "発表スライドって自作できるんじゃね？",
       prebLink: "/whyCreate/page2",
       nextLink: "/whyCreate/page4"
     },

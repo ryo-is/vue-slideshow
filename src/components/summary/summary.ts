@@ -31,7 +31,7 @@ export default class Summary extends Vue {
     next: ""
   };
   pageContentText: string =
-    "Vueが好きすぎて発表スライドを自作して、いい意味でも悪い意味でも勉強になったって話をします";
+    "Vueが好きすぎて発表スライドを自作した話をします";
   pageName: string = "";
   pageTitleText: string = "今日のお話";
 

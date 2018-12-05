@@ -1,8 +1,8 @@
 .main-contents {
   .apply-content {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     line-height: 12vh;
-    margin: 5vh 8vw 0;
+    margin: 5vh 5vw 0;
     text-align: left;
 
     &.change-pages-links {
@@ -11,6 +11,10 @@
 
     ul {
       margin: 0;
+
+      li {
+        padding-left: 1rem;
+      }
     }
 
     .image {
@@ -33,7 +37,7 @@
         position: relative;
 
         .text-area {
-          font-size: 4.5rem;
+          font-size: 5rem;
           font-weight: bold;
           left: 0;
           line-height: 20vh;
