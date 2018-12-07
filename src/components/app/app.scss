@@ -20,12 +20,27 @@
       height: 100vh;
     }
 
-    .preb-page {
-      cursor: w-resize;
+    .preb-arrow,
+    .next-arrow {
+      bottom: 0;
+      height: 56px;
+      margin: auto;
+      opacity: .2;
+      position: absolute;
+      top: 0;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
     }
 
-    .next-page {
-      cursor: e-resize;
+    .preb-arrow {
+      left: 20px;
+    }
+
+    .next-arrow {
+      right: 20px;
     }
   }
 }

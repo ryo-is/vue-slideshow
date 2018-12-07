@@ -1,8 +1,12 @@
 #app
   el-row.transition-page-area
     el-col(:span="12")
-      .preb-page(@click="transitionPage('preb')")
+      .preb-page(@click="transitionPage('preb')" @mouseenter="showArrow('preb')" @mouseleave="hiddenArrow('preb')")
+      .preb-arrow(v-show="prebArrow")
+        img(src="../../assets/left_arrow.png", alt="")
     el-col(:span="12")
-      .next-page(@click="transitionPage('next')")
+      .next-page(@click="transitionPage('next')" @mouseenter="showArrow('next')" @mouseleave="hiddenArrow('next')")
+      .next-arrow(v-show="nextArrow")
+        img(src="../../assets/right_arrow.png", alt="")
   transition(name="router-transition" enter-active-class="animated slideInRight")
     router-view
