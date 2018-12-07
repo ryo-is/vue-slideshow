@@ -15,7 +15,6 @@ export default class App extends Vue {
   }
 
   public showArrow(action: string) {
-    console.log(action);
     switch (action) {
       case "preb":
         this.prebArrow = true;
@@ -29,7 +28,6 @@ export default class App extends Vue {
   }
 
   public hiddenArrow(action: string) {
-    console.log(action);
     switch (action) {
       case "preb":
         this.prebArrow = false;
