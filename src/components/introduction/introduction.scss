@@ -1,13 +1,12 @@
 .introduvtion {
   min-height: 100vh;
 
-  .main-text {
+  .main-text-area {
+    align-items: center;
+    display: flex;
     font-size: 4.5rem;
     font-weight: bold;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 40vh;
+    height: 100vh;
+    justify-content: center;
   }
 }

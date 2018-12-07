@@ -35,17 +35,16 @@
 
       .link-area-common {
         height: 100vh;
-        position: relative;
 
         .text-area {
+          align-items: center;
+          display: flex;
           font-size: 5rem;
           font-weight: bold;
-          left: 0;
+          height: 100%;
           line-height: 20vh;
-          position: absolute;
-          right: 0;
+          justify-content: center;
           text-align: center;
-          top: 40vh;
         }
       }
 

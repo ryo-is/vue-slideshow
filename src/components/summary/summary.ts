@@ -30,7 +30,7 @@ export default class Summary extends Vue {
     preb: "",
     next: ""
   };
-  pageContentText: string = "Vueが好きすぎて発表スライドを自作した話をします";
+  pageContentText: string = "Vueが好きすぎて発表スライドを自作してしまった話をします";
   pageName: string = "";
   pageTitleText: string = "今日のお話";
 

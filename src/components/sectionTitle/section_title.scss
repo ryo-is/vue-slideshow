@@ -1,7 +1,14 @@
 .section-title {
+
   .text-area {
-    font-size: 7rem;
-    font-weight: bold;
-    padding-top: 35vh;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+    .text {
+      font-size: 7rem;
+      font-weight: bold;
+    }
   }
 }
