@@ -24,12 +24,12 @@ export default class Introduction extends Vue {
       nextLink: "/introduction/page2"
     },
     page2: {
-      mainText: "素直に嬉しいです！",
+      mainText: "いやーめでたい！！",
       prebLink: "/introduction/page1",
       nextLink: "/introduction/page3"
     },
     page3: {
-      mainText: "私は6月からVueを触り始めた新参者です。",
+      mainText: "私は今年の夏からVueを触り始めた新参者です",
       prebLink: "/introduction/page2",
       nextLink: "/introduction/page4"
     },

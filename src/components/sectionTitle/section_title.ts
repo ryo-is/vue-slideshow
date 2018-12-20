@@ -19,33 +19,58 @@ export default class SectionTitle extends Vue {
 
   contents: pageContentsType = {
     page1: {
-      mainText: "完成品",
-      prebLink: "/whyCreate/page4",
+      mainText: "IoT.kyoto VIS",
+      prebLink: "/summary/page1",
       nextLink: "/mainContents/page1"
     },
     page2: {
-      mainText: "工夫した点",
-      prebLink: "/mainContents/page2",
-      nextLink: "/mainContents/page3"
+      mainText: "なぜVueなのか",
+      prebLink: "/mainContents/page4",
+      nextLink: "/mainContents/page5"
     },
     page3: {
-      mainText: "実際にVueで作ったアプリ",
-      prebLink: "/mainContents/page9",
-      nextLink: "/sectionTitle/page4"
+      mainText: "Vueにした恩恵",
+      prebLink: "/mainContents/page6",
+      nextLink: "/mainContents/page7"
     },
     page4: {
-      mainText: "IoT.kyoto VIS",
-      prebLink: "/sectionTitle/page3",
-      nextLink: "/mainContents/page10"
+      mainText: "ちょっとした苦労話とか",
+      prebLink: "/mainContents/page7",
+      nextLink: "/sectionTitle/page5"
     },
     page5: {
-      mainText: "まとめ",
+      mainText: "Webpack周りの設定",
+      prebLink: "/sectionTitle/page4",
+      nextLink: "/mainContents/page8"
+    },
+    page6: {
+      mainText: "画面のリロード対策",
+      prebLink: "/mainContents/page9",
+      nextLink: "/mainContents/page10"
+    },
+    page7: {
+      mainText: "AWSリソースへのアクセス",
       prebLink: "/mainContents/page12",
       nextLink: "/mainContents/page13"
     },
-    page6: {
+    page8: {
+      mainText: "CF+S3 で公開するときの罠",
+      prebLink: "/mainContents/page15",
+      nextLink: "/mainContents/page16"
+    },
+    page9: {
+      mainText: "今後の課題",
+      prebLink: "/mainContents/page20",
+      nextLink: "/mainContents/page21"
+    },
+    page10: {
+      mainText: "Vueは素晴らしい！！！",
+      prebLink: "/mainContents/page21",
+      nextLink: "/sectionTitle/end"
+    },
+    end: {
       mainText: "おわり",
-      prebLink: "/conclusion/page2",
+      prebLink: "/mainContents/page21",
       nextLink: "/"
     }
   };

@@ -36,16 +36,6 @@ export default new Router({
       component: Summary
     },
     {
-      path: "/conclusion/:pageName",
-      name: "conclusion",
-      component: Conclusion
-    },
-    {
-      path: "/whyCreate/:pageName",
-      name: "whyCreate",
-      component: WhyCreate
-    },
-    {
       path: "/mainContents/:pageName",
       name: "mainContents",
       component: MainContents
