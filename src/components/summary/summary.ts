@@ -35,7 +35,7 @@ export default class Summary extends Vue {
       mainText:
         "途中AWSの話が出てきます。中毒者が話すので、脱線してしまうかもしれませんがご了承下さい。",
       prebLink: "/summary/page1",
-      nextLink: "/sectionTitle/page1"
+      nextLink: "/sectionTitle/vis"
     }
   };
   transitionPageInfo: transitionPageInfoType = {

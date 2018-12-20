@@ -1,17 +1,17 @@
 .main-contents
   PageTitle(:title-text="pageTitleText")
-  .iot-kyoto-vis.apply-content(v-if="pageName === 'page2'")
+  .iot-kyoto-vis.apply-content(v-if="pageName === 'vis_2'")
     include ./views/iot_kyoto_vis
-  .iot-kyoto-vis-description.apply-content(v-else-if="pageName === 'page3'")
+  .iot-kyoto-vis-description.apply-content(v-else-if="pageName === 'vis_3'")
     include ./views/iot_kyoto_vis_description
-  .iot-kyoto-vis-architecture.apply-content(v-else-if="pageName === 'page4'")
+  .iot-kyoto-vis-architecture.apply-content(v-else-if="pageName === 'vis_4'")
     include ./views/iot_kyoto_vis_architecture
-  .why-select-vue.apply-content(v-else-if="pageName === 'page6'")
+  .why-select-vue.apply-content(v-else-if="pageName === 'vue_2'")
     include ./views/why_vue
-  .cf-setting.apply-content(v-else-if="pageName === 'page20'")
+  .cf-setting.apply-content(v-else-if="pageName === 'spa_5'")
     include ./views/cf_setting
-  .task.apply-content(v-else-if="pageName === 'page21'")
+  .task.apply-content(v-else-if="pageName === 'task_1'")
     include ./views/task
-  .summary.apply-content(v-else-if="pageName === 'summary'")
+  .summary.apply-content(v-else-if="pageName === 'summary_1'")
     include ./views/summary
   PageContent(:content-text="pageContentText" v-else)

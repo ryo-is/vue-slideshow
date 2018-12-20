@@ -25,136 +25,142 @@ export default class MainContents extends Vue {
 
   basicContent: boolean = true;
   contents: pageContentsType = {
-    page1: {
+    vis_1: {
       mainText: "IoTセンサーデータを可視化するアプリ",
       mainTitle: "IoT.kyoto VIS",
-      prebLink: "/sectionTitle/page1",
-      nextLink: "/mainContents/page2"
+      prebLink: "/sectionTitle/vis",
+      nextLink: "/mainContents/vis_2"
     },
-    page2: {
+    vis_2: {
       mainText: "",
       mainTitle: "IoT.kyoto VIS",
-      prebLink: "/mainContents/page1",
-      nextLink: "/mainContents/page3"
+      prebLink: "/mainContents/vis_1",
+      nextLink: "/mainContents/vis_3"
     },
-    page3: {
+    vis_3: {
       mainText: "",
       mainTitle: "IoT.kyoto VIS",
-      prebLink: "/mainContents/page2",
-      nextLink: "/mainContents/page4"
+      prebLink: "/mainContents/vis_2",
+      nextLink: "/mainContents/vis_4"
     },
-    page4: {
+    vis_4: {
       mainText: "",
       mainTitle: "IoT.kyoto VIS",
       prebLink: "/mainContents/page3",
-      nextLink: "/sectionTitle/page2"
+      nextLink: "/sectionTitle/vue"
     },
-    page5: {
+    vue_1: {
       mainText: "jQueryから逃げたかった",
       mainTitle: "なぜVueなのか",
-      prebLink: "/sectionTitle/page2",
-      nextLink: "/mainContents/page6"
+      prebLink: "/sectionTitle/vue",
+      nextLink: "/mainContents/vue_2"
     },
-    page6: {
+    vue_2: {
       mainText: "",
       mainTitle: "なぜVueなのか",
-      prebLink: "/mainContents/page5",
-      nextLink: "/sectionTitle/page3"
+      prebLink: "/mainContents/vue_1",
+      nextLink: "/sectionTitle/benefit"
     },
-    page7: {
+    benefit_1: {
       mainText: "jQueryに別れを告げ、アプリがSPAになり、Serverlessになった！",
       mainTitle: "恩恵",
-      prebLink: "/sectionTitle/page3",
-      nextLink: "/sectionTitle/page4"
+      prebLink: "/sectionTitle/benefit",
+      nextLink: "/sectionTitle/hardships"
     },
-    page8: {
+    webpack_1: {
       mainText:
         "Vue触り始めたころはまだVueCLI2でTypeScriptとかSassとかPugのWebpack周りの設定辛かったな…",
       mainTitle: "Webpack周りの設定",
-      prebLink: "/sectionTitle/page4",
-      nextLink: "/mainContents/page9"
+      prebLink: "/sectionTitle/webpack",
+      nextLink: "/mainContents/webpack_2"
     },
-    page9: {
+    webpack_2: {
       mainText: "VueCLI3ではよしなに設定してくれるようになった！！！",
       mainTitle: "Webpack周りの設定",
-      prebLink: "/mainContents/page8",
-      nextLink: "/sectionTitle/page6"
+      prebLink: "/mainContents/webpack_2",
+      nextLink: "/sectionTitle/reload"
     },
-    page10: {
+    reload_1: {
       mainText: "画面のリロードするとVuex内の変数ぶっ飛ぶじゃん…",
       mainTitle: "画面のリロード対策",
-      prebLink: "/sectionTitle/page6",
-      nextLink: "/mainContents/page11"
+      prebLink: "/sectionTitle/reload",
+      nextLink: "/mainContents/reload_2"
     },
-    page11: {
+    reload_2: {
       mainText:
         "`vuex-persistedstate` を使ってリロードしてもぶっ飛ばないようにした",
       mainTitle: "画面のリロード対策",
-      prebLink: "/mainContents/page10",
-      nextLink: "/mainContents/page12"
+      prebLink: "/mainContents/reload_1",
+      nextLink: "/mainContents/reload_3"
     },
-    page12: {
+    reload_3: {
       mainText: "他にこんな方法あるよ！というのがあれば教えてください",
       mainTitle: "画面のリロード対策",
-      prebLink: "/mainContents/page10",
-      nextLink: "/sectionTitle/page7"
+      prebLink: "/mainContents/reload_2",
+      nextLink: "/sectionTitle/aws"
     },
-    page13: {
+    aws_1: {
       mainText:
         "EC2なくなったけど、AWSリソースへのアクセスの認証をどないしましょうかね…",
       mainTitle: "AWSリソースへのアクセス",
-      prebLink: "/sectionTitle/page7",
-      nextLink: "/mainContents/page14"
+      prebLink: "/sectionTitle/aws",
+      nextLink: "/mainContents/aws_2"
     },
-    page14: {
+    aws_2: {
       mainText:
         "AmazonAPIGatewayトリガーでAWSLambdaをinvokeするようにして、axiosでPOSTする",
       mainTitle: "AWSリソースへのアクセス",
-      prebLink: "/mainContents/page13",
-      nextLink: "/mainContents/page15"
+      prebLink: "/mainContents/aws_1",
+      nextLink: "/mainContents/aws_3"
     },
-    page15: {
+    aws_3: {
       mainText: "あとはAppSync使ってGraphQLでデータをやり取りするようにした",
       mainTitle: "AWSリソースへのアクセス",
-      prebLink: "/mainContents/page14",
-      nextLink: "/sectionTitle/page8"
+      prebLink: "/mainContents/aws_2",
+      nextLink: "/sectionTitle/spa"
     },
-    page16: {
+    spa_1: {
       mainText:
         "SPAってURL的にはそれぞれのHTMLを表示しているように見えるけど、実際は index.html だけですよね",
-      mainTitle: "CF+S3 で公開するときの罠",
-      prebLink: "/sectionTitle/page8",
-      nextLink: "/mainContents/page17"
+      mainTitle: "SPA + CF + S3 の罠",
+      prebLink: "/sectionTitle/spa",
+      nextLink: "/mainContents/spa_2"
     },
-    page17: {
+    spa_2: {
       mainText: "要するに `/` も `/hoge` も　index.html を表示しないといけない",
-      mainTitle: "CF+S3 で公開するときの罠",
-      prebLink: "/mainContents/page16",
-      nextLink: "/mainContents/page18"
+      mainTitle: "SPA + CF + S3 の罠",
+      prebLink: "/mainContents/spa_1",
+      nextLink: "/mainContents/spa_3"
     },
-    page18: {
+    spa_3: {
       mainText: "でもS3の `/hoge` って hoge.html ことじゃない…？",
-      mainTitle: "CF+S3 で公開するときの罠",
-      prebLink: "/mainContents/page17",
-      nextLink: "/mainContents/page19"
+      mainTitle: "SPA + CF + S3 の罠",
+      prebLink: "/mainContents/spa_2",
+      nextLink: "/mainContents/spa_4"
     },
-    page19: {
+    spa_4: {
       mainText: "Access Denied",
-      mainTitle: "CF+S3 で公開するときの罠",
-      prebLink: "/mainContents/page18",
-      nextLink: "/mainContents/page20"
+      mainTitle: "SPA + CF + S3 の罠",
+      prebLink: "/mainContents/spa_3",
+      nextLink: "/mainContents/spa_5"
     },
-    page20: {
+    spa_5: {
       mainText: "",
-      mainTitle: "CF+S3 で公開するときの罠",
-      prebLink: "/mainContents/page19",
-      nextLink: "/sectionTitle/page9"
+      mainTitle: "SPA + CF + S3 の罠",
+      prebLink: "/mainContents/spa_4",
+      nextLink: "/sectionTitle/task"
     },
-    page21: {
+    task_1: {
       mainText: "",
       mainTitle: "今後の課題",
-      prebLink: "/sectionTitle/page9",
-      nextLink: "/sectionTitle/page10"
+      prebLink: "/sectionTitle/task",
+      nextLink: "/sectionTitle/summary"
+    },
+    summary_1: {
+      mainText: "",
+      mainTitle: "まとめ",
+      prebLink: "/sectionTitle/summary",
+      nextLink: "/sectionTitle/good_vue"
     }
   };
   transitionPageInfo: transitionPageInfoType = {

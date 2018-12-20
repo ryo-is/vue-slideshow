@@ -18,59 +18,64 @@ export default class SectionTitle extends Vue {
   }
 
   contents: pageContentsType = {
-    page1: {
+    vis: {
       mainText: "IoT.kyoto VIS",
       prebLink: "/summary/page1",
-      nextLink: "/mainContents/page1"
+      nextLink: "/mainContents/vis_1"
     },
-    page2: {
+    vue: {
       mainText: "なぜVueなのか",
-      prebLink: "/mainContents/page4",
-      nextLink: "/mainContents/page5"
+      prebLink: "/mainContents/vis_4",
+      nextLink: "/mainContents/vue_1"
     },
-    page3: {
+    benefit: {
       mainText: "Vueにした恩恵",
-      prebLink: "/mainContents/page6",
-      nextLink: "/mainContents/page7"
+      prebLink: "/mainContents/vue_2",
+      nextLink: "/mainContents/benefit_1"
     },
-    page4: {
+    hardships: {
       mainText: "ちょっとした苦労話とか",
-      prebLink: "/mainContents/page7",
-      nextLink: "/sectionTitle/page5"
+      prebLink: "/mainContents/benefit_1",
+      nextLink: "/sectionTitle/webpack"
     },
-    page5: {
+    webpack: {
       mainText: "Webpack周りの設定",
-      prebLink: "/sectionTitle/page4",
-      nextLink: "/mainContents/page8"
+      prebLink: "/sectionTitle/hardships",
+      nextLink: "/mainContents/webpack_1"
     },
-    page6: {
+    reload: {
       mainText: "画面のリロード対策",
-      prebLink: "/mainContents/page9",
-      nextLink: "/mainContents/page10"
+      prebLink: "/mainContents/webpack_2",
+      nextLink: "/mainContents/reload_1"
     },
-    page7: {
+    aws: {
       mainText: "AWSリソースへのアクセス",
-      prebLink: "/mainContents/page12",
-      nextLink: "/mainContents/page13"
+      prebLink: "/mainContents/reload_3",
+      nextLink: "/mainContents/aws_1"
     },
-    page8: {
-      mainText: "CF+S3 で公開するときの罠",
-      prebLink: "/mainContents/page15",
-      nextLink: "/mainContents/page16"
+    spa: {
+      mainText: "SPA + CF + S3 の罠",
+      prebLink: "/mainContents/aws_3",
+      nextLink: "/mainContents/spa_1"
     },
-    page9: {
+    task: {
       mainText: "今後の課題",
-      prebLink: "/mainContents/page20",
-      nextLink: "/mainContents/page21"
+      prebLink: "/mainContents/spa_5",
+      nextLink: "/mainContents/task_1"
     },
-    page10: {
+    summary: {
+      mainText: "まとめ",
+      prebLink: "/mainContents/task_1",
+      nextLink: "/mainContents/summary_1"
+    },
+    good_vue: {
       mainText: "Vueは素晴らしい！！！",
-      prebLink: "/mainContents/page21",
+      prebLink: "/mainContents/summary_1",
       nextLink: "/sectionTitle/end"
     },
     end: {
       mainText: "おわり",
-      prebLink: "/mainContents/page21",
+      prebLink: "/sectionTitle/good_vue",
       nextLink: "/"
     }
   };
