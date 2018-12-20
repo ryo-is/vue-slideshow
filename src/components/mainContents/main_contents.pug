@@ -1,19 +1,17 @@
 .main-contents
   PageTitle(:title-text="pageTitleText")
-  .split-component.apply-content(v-if="pageName === 'page4'")
-    include ./views/split_component
-  .router-setting.apply-content(v-else-if="pageName === 'page6'")
-    include ./views/router_setting
-  .change-pages.apply-content(v-else-if="pageName === 'page8'")
-    include ./views/change_pages
-  .change-pages-links.apply-content(v-else-if="pageName === 'page9'")
-    include ./views/change_pages_links
-  .iot-kyoto-vis.apply-content(v-else-if="pageName === 'page10'")
+  .iot-kyoto-vis.apply-content(v-if="pageName === 'page2'")
     include ./views/iot_kyoto_vis
-  .iot-kyoto-vis-description.apply-content(v-else-if="pageName === 'page11'")
+  .iot-kyoto-vis-description.apply-content(v-else-if="pageName === 'page3'")
     include ./views/iot_kyoto_vis_description
-  .iot-kyoto-vis-architecture.apply-content(v-else-if="pageName === 'page12'")
+  .iot-kyoto-vis-architecture.apply-content(v-else-if="pageName === 'page4'")
     include ./views/iot_kyoto_vis_architecture
-  .summary.apply-content(v-else-if="pageName === 'page13'")
+  .why-select-vue.apply-content(v-else-if="pageName === 'page6'")
+    include ./views/why_vue
+  .cf-setting.apply-content(v-else-if="pageName === 'page20'")
+    include ./views/cf_setting
+  .task.apply-content(v-else-if="pageName === 'page21'")
+    include ./views/task
+  .summary.apply-content(v-else-if="pageName === 'summary'")
     include ./views/summary
   PageContent(:content-text="pageContentText" v-else)

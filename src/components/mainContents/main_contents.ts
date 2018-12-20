@@ -26,88 +26,135 @@ export default class MainContents extends Vue {
   basicContent: boolean = true;
   contents: pageContentsType = {
     page1: {
-      mainText: "今見ているこれです！",
-      mainTitle: "完成品",
+      mainText: "IoTセンサーデータを可視化するアプリ",
+      mainTitle: "IoT.kyoto VIS",
       prebLink: "/sectionTitle/page1",
       nextLink: "/mainContents/page2"
     },
     page2: {
-      mainText: "https://github.com/ryo-is/vue-slideshow",
-      mainTitle: "完成品",
+      mainText: "",
+      mainTitle: "IoT.kyoto VIS",
       prebLink: "/mainContents/page1",
-      nextLink: "/sectionTitle/page2"
+      nextLink: "/mainContents/page3"
     },
     page3: {
-      mainText: "デザインごとにComponentを分ける",
-      mainTitle: "工夫した点",
-      prebLink: "/sectionTitle/page2",
+      mainText: "",
+      mainTitle: "IoT.kyoto VIS",
+      prebLink: "/mainContents/page2",
       nextLink: "/mainContents/page4"
     },
     page4: {
       mainText: "",
-      mainTitle: "工夫した点",
+      mainTitle: "IoT.kyoto VIS",
       prebLink: "/mainContents/page3",
-      nextLink: "/mainContents/page5"
+      nextLink: "/sectionTitle/page2"
     },
     page5: {
-      mainText: "動的セグメントを利用して、なるべくRouterを汚さない",
-      mainTitle: "工夫した点",
-      prebLink: "/mainContents/page4",
+      mainText: "jQueryから逃げたかった",
+      mainTitle: "なぜVueなのか",
+      prebLink: "/sectionTitle/page2",
       nextLink: "/mainContents/page6"
     },
     page6: {
       mainText: "",
-      mainTitle: "工夫した点",
+      mainTitle: "なぜVueなのか",
       prebLink: "/mainContents/page5",
-      nextLink: "/mainContents/page7"
+      nextLink: "/sectionTitle/page3"
     },
     page7: {
-      mainText: "画面(スライド)の切り替え",
-      mainTitle: "工夫した点",
-      prebLink: "/mainContents/page6",
-      nextLink: "/mainContents/page8"
+      mainText: "jQueryに別れを告げ、アプリがSPAになり、Serverlessになった！",
+      mainTitle: "恩恵",
+      prebLink: "/sectionTitle/page3",
+      nextLink: "/sectionTitle/page4"
     },
     page8: {
-      mainText: "",
-      mainTitle: "工夫した点",
-      prebLink: "/mainContents/page7",
+      mainText:
+        "Vue触り始めたころはまだVueCLI2でTypeScriptとかSassとかPugのWebpack周りの設定辛かったな…",
+      mainTitle: "Webpack周りの設定",
+      prebLink: "/sectionTitle/page4",
       nextLink: "/mainContents/page9"
     },
     page9: {
-      mainText: "",
-      mainTitle: "工夫した点",
+      mainText: "VueCLI3ではよしなに設定してくれるようになった！！！",
+      mainTitle: "Webpack周りの設定",
       prebLink: "/mainContents/page8",
-      nextLink: "/sectionTitle/page3"
+      nextLink: "/sectionTitle/page6"
     },
     page10: {
-      mainText: "",
-      mainTitle: "IoT.kyotoVIS",
-      prebLink: "/sectionTitle/page4",
+      mainText: "画面のリロードするとVuex内の変数ぶっ飛ぶじゃん…",
+      mainTitle: "画面のリロード対策",
+      prebLink: "/sectionTitle/page6",
       nextLink: "/mainContents/page11"
     },
     page11: {
-      mainText: "",
-      mainTitle: "IoT.kyotoVIS",
+      mainText:
+        "`vuex-persistedstate` を使ってリロードしてもぶっ飛ばないようにした",
+      mainTitle: "画面のリロード対策",
       prebLink: "/mainContents/page10",
       nextLink: "/mainContents/page12"
     },
     page12: {
-      mainText: "",
-      mainTitle: "IoT.kyotoVIS",
-      prebLink: "/mainContents/page11",
-      nextLink: "/sectionTitle/page5"
+      mainText: "他にこんな方法あるよ！というのがあれば教えてください",
+      mainTitle: "画面のリロード対策",
+      prebLink: "/mainContents/page10",
+      nextLink: "/sectionTitle/page7"
     },
     page13: {
-      mainText: "",
-      mainTitle: "まとめ",
-      prebLink: "/sectionTitle/page5",
+      mainText:
+        "EC2なくなったけど、AWSリソースへのアクセスの認証をどないしましょうかね…",
+      mainTitle: "AWSリソースへのアクセス",
+      prebLink: "/sectionTitle/page7",
       nextLink: "/mainContents/page14"
     },
     page14: {
-      mainText: "Vueは素晴らしい！！！",
-      mainTitle: "まとめ",
+      mainText:
+        "AmazonAPIGatewayトリガーでAWSLambdaをinvokeするようにして、axiosでPOSTする",
+      mainTitle: "AWSリソースへのアクセス",
       prebLink: "/mainContents/page13",
-      nextLink: "/conclusion/page2"
+      nextLink: "/mainContents/page15"
+    },
+    page15: {
+      mainText: "あとはAppSync使ってGraphQLでデータをやり取りするようにした",
+      mainTitle: "AWSリソースへのアクセス",
+      prebLink: "/mainContents/page14",
+      nextLink: "/sectionTitle/page8"
+    },
+    page16: {
+      mainText:
+        "SPAってURL的にはそれぞれのHTMLを表示しているように見えるけど、実際は index.html だけですよね",
+      mainTitle: "CF+S3 で公開するときの罠",
+      prebLink: "/sectionTitle/page8",
+      nextLink: "/mainContents/page17"
+    },
+    page17: {
+      mainText: "要するに `/` も `/hoge` も　index.html を表示しないといけない",
+      mainTitle: "CF+S3 で公開するときの罠",
+      prebLink: "/mainContents/page16",
+      nextLink: "/mainContents/page18"
+    },
+    page18: {
+      mainText: "でもS3の `/hoge` って hoge.html ことじゃない…？",
+      mainTitle: "CF+S3 で公開するときの罠",
+      prebLink: "/mainContents/page17",
+      nextLink: "/mainContents/page19"
+    },
+    page19: {
+      mainText: "Access Denied",
+      mainTitle: "CF+S3 で公開するときの罠",
+      prebLink: "/mainContents/page18",
+      nextLink: "/mainContents/page20"
+    },
+    page20: {
+      mainText: "",
+      mainTitle: "CF+S3 で公開するときの罠",
+      prebLink: "/mainContents/page19",
+      nextLink: "/sectionTitle/page9"
+    },
+    page21: {
+      mainText: "",
+      mainTitle: "今後の課題",
+      prebLink: "/sectionTitle/page9",
+      nextLink: "/sectionTitle/page10"
     }
   };
   transitionPageInfo: transitionPageInfoType = {
