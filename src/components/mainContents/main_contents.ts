@@ -51,14 +51,20 @@ export default class MainContents extends Vue {
     },
     vue_1: {
       mainText: "jQueryから逃げたかった",
-      mainTitle: "なぜVueなのか",
+      mainTitle: "なぜ Vue なのか",
       prebLink: "/sectionTitle/vue",
       nextLink: "/mainContents/vue_2"
     },
     vue_2: {
       mainText: "",
-      mainTitle: "なぜVueなのか",
+      mainTitle: "なぜ Vue なのか",
       prebLink: "/mainContents/vue_1",
+      nextLink: "/mainContents/vue_3"
+    },
+    vue_3: {
+      mainText: "Vueっていうフレームワーク使えばjQuery使わずに済むんやろ？くらいのノリでVueを触り始めた",
+      mainTitle: "なぜ Vue なのか",
+      prebLink: "/mainContents/vue_2",
       nextLink: "/sectionTitle/benefit"
     },
     benefit_1: {
@@ -117,6 +123,12 @@ export default class MainContents extends Vue {
       mainText: "あとはAppSync使ってGraphQLでデータをやり取りするようにした",
       mainTitle: "AWSリソースへのアクセス",
       prebLink: "/mainContents/aws_2",
+      nextLink: "/mainContents/aws_4"
+    },
+    aws_4: {
+      mainText: "APIGatewayとAppSyncはCognitoTokenで認証する",
+      mainTitle: "AWSリソースへのアクセス",
+      prebLink: "/mainContents/aws_3",
       nextLink: "/sectionTitle/spa"
     },
     spa_1: {

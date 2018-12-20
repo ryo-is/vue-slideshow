@@ -24,13 +24,13 @@ export default class SectionTitle extends Vue {
       nextLink: "/mainContents/vis_1"
     },
     vue: {
-      mainText: "なぜVueなのか",
+      mainText: "なぜ Vue なのか",
       prebLink: "/mainContents/vis_4",
       nextLink: "/mainContents/vue_1"
     },
     benefit: {
       mainText: "Vueにした恩恵",
-      prebLink: "/mainContents/vue_2",
+      prebLink: "/mainContents/vue_3",
       nextLink: "/mainContents/benefit_1"
     },
     hardships: {
