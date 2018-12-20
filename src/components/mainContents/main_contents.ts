@@ -62,7 +62,8 @@ export default class MainContents extends Vue {
       nextLink: "/mainContents/vue_3"
     },
     vue_3: {
-      mainText: "Vueっていうフレームワーク使えばjQuery使わずに済むんやろ？くらいのノリでVueを触り始めた",
+      mainText:
+        "Vueっていうフレームワーク使えばjQuery使わずに済むんやろ？くらいのノリでVueを触り始めた",
       mainTitle: "なぜ Vue なのか",
       prebLink: "/mainContents/vue_2",
       nextLink: "/sectionTitle/benefit"
@@ -106,8 +107,7 @@ export default class MainContents extends Vue {
       nextLink: "/sectionTitle/aws"
     },
     aws_1: {
-      mainText:
-        "EC2なくなったけど、AWSリソースへの認証をどないしましょうかね…",
+      mainText: "EC2なくなったけど、AWSリソースへの認証をどないしましょうかね…",
       mainTitle: "AWSリソースへのアクセス",
       prebLink: "/sectionTitle/aws",
       nextLink: "/mainContents/aws_2"
