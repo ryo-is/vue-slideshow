@@ -46,7 +46,7 @@ export default class MainContents extends Vue {
     vis_4: {
       mainText: "",
       mainTitle: "IoT.kyoto VIS",
-      prebLink: "/mainContents/page3",
+      prebLink: "/mainContents/vis_3",
       nextLink: "/sectionTitle/vue"
     },
     vue_1: {
@@ -101,7 +101,7 @@ export default class MainContents extends Vue {
     },
     aws_1: {
       mainText:
-        "EC2なくなったけど、AWSリソースへのアクセスの認証をどないしましょうかね…",
+        "EC2なくなったけど、AWSリソースへの認証をどないしましょうかね…",
       mainTitle: "AWSリソースへのアクセス",
       prebLink: "/sectionTitle/aws",
       nextLink: "/mainContents/aws_2"
@@ -133,7 +133,7 @@ export default class MainContents extends Vue {
       nextLink: "/mainContents/spa_3"
     },
     spa_3: {
-      mainText: "でもS3の `/hoge` って hoge.html ことじゃない…？",
+      mainText: "でもS3での `/hoge` って hoge.html のことじゃない…？",
       mainTitle: "SPA + CF + S3 の罠",
       prebLink: "/mainContents/spa_2",
       nextLink: "/mainContents/spa_4"
